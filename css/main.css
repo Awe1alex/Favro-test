@@ -148,7 +148,10 @@ header {
     box-shadow: 0px 0px 40px rgba(207, 210, 214, 0.25);
     border-radius: 15px;
     width: 100%;
-    height: auto; }
+    height: auto;
+    display: none; }
+    .features-images img.active {
+      display: block; }
     @media (min-width: 1200px) {
       .features-images img {
         margin-top: 100px;

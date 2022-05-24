@@ -84,6 +84,11 @@
       border-radius: 15px;
       width: 100%;
       height: auto;
+      display: none;
+
+      &.active {
+        display: block;
+      }
 
       @include media($from: 'xl') {
         margin-top: 100px;
