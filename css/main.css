@@ -1,9 +1,165 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 body {
-  font-family: 'Inter', sans-serif; }
+  font-family: 'Inter', sans-serif;
+  background-color: #fff; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #fff;
+  color: #000; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px; }
+
+h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -4px;
+  text-align: center;
+  margin-bottom: 32px; }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 48px;
+      line-height: 50px;
+      letter-spacing: -2px;
+      margin-bottom: 16px; } }
+
+h2 {
+  margin: 0;
+  margin-bottom: 96px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: -1px;
+      margin-bottom: 64px; } }
+
+h4 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4f5964; }
+  @media (max-width: 767px) {
+    h4 {
+      font-size: 16px;
+      line-height: 19px; } }
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left; }
+  @media (max-width: 767px) {
+    h5 {
+      font-size: 16px;
+      line-height: 19px; } }
+
+header {
+  background-color: #fff;
+  box-shadow: 0px 6px 40px rgba(207, 210, 214, 0.25); }
+  header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px; }
+  header .logo {
+    display: inline-flex;
+    align-items: center; }
+    header .logo-img {
+      width: 30px;
+      height: 32px;
+      margin-right: 5px; }
+      @media (max-width: 767px) {
+        header .logo-img {
+          width: 22px;
+          height: 24px;
+          margin-right: 4px; } }
+    header .logo-text {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: -0.05em; }
+  header .fa-glasses {
+    font-size: 29px; }
+
+.content {
+  margin-top: 100px; }
+  @media (max-width: 767px) {
+    .content {
+      margin-top: 24px; } }
+  @media (min-width: 1200px) {
+    .content .heading h1 {
+      padding: 0 80px; } }
+  @media (min-width: 1200px) {
+    .content .heading h4 {
+      max-width: 543px;
+      margin: 0 auto; } }
+  .content .heading .button {
+    margin: 0 auto;
+    margin-top: 48px; }
+    @media (max-width: 767px) {
+      .content .heading .button {
+        margin-top: 64px; } }
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 500px;
+  margin-top: 400px; }
+  @media (max-width: 767px) {
+    .features {
+      flex-direction: column;
+      justify-content: flex-start; } }
+  .features-container {
+    padding: 0 40px; }
+    @media (max-width: 767px) {
+      .features-container {
+        padding: 0 16px; } }
+  @media (min-width: 1200px) {
+    .features-titles {
+      margin-right: 128px;
+      margin-top: 100px; } }
+  @media (max-width: 767px) {
+    .features-titles h2 {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .features-images {
+      position: sticky;
+      bottom: 0; } }
+  @media (min-width: 768px) {
+    .features-images .image-wrapper {
+      position: sticky;
+      top: 0; } }
+  .features-images img {
+    box-shadow: 0px 0px 40px rgba(207, 210, 214, 0.25);
+    border-radius: 15px;
+    width: 100%;
+    height: auto; }
+    @media (min-width: 1200px) {
+      .features-images img {
+        margin-top: 100px;
+        width: 544px; } }
+
+.button {
+  padding: 20px 48px;
+  border: none;
+  border-radius: 100px;
+  background-color: #6f63f4;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  display: block; }
 
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com

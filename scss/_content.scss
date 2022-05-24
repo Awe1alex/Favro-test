@@ -1,0 +1,100 @@
+.content {
+  margin-top: 100px;
+
+  @include media($until: 'md') {
+    margin-top: 24px;
+  }
+
+  .heading {
+    h1 {
+      @include media($from: 'xl') {
+        padding: 0 80px;
+      }
+    }
+
+    h4 {
+      @include media($from: 'xl') {
+        max-width: 543px;
+        margin: 0 auto;
+      }
+    }
+
+    .button {
+      margin: 0 auto;
+      margin-top: 48px;
+
+      @include media($until: 'md') {
+        margin-top: 64px;
+      }
+    }
+  }
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 500px;
+  margin-top: 400px;
+
+  @include media($until: 'md') {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &-container {
+    padding: 0 40px;
+    @include media($until: 'md') {
+      padding: 0 16px;
+    }
+  }
+
+  &-titles {
+    @include media($from: 'xl') {
+      margin-right: 128px;
+      margin-top: 100px;
+    }
+    h2 {
+      @include media($until: 'md') {
+        text-align: center;
+      }
+    }
+  }
+
+  &-images {
+    @include media($until: 'md') {
+      position: sticky;
+      bottom: 0;
+    }
+
+    .image-wrapper {
+      @include media($from: 'md') {
+        position: sticky;
+        top: 0;
+      }
+    }
+
+    img {
+      box-shadow: 0px 0px 40px rgba(207, 210, 214, 0.25);
+      border-radius: 15px;
+      width: 100%;
+      height: auto;
+
+      @include media($from: 'xl') {
+        margin-top: 100px;
+        width: 544px;
+      }
+    }
+  }
+}
+
+.button {
+  padding: 20px 48px;
+  border: none;
+  border-radius: 100px;
+  background-color: $main;
+  color: $white;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}

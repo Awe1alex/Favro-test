@@ -1,0 +1,45 @@
+header {
+  background-color: $white;
+  box-shadow: 0px 6px 40px rgba(207, 210, 214, 0.25);
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+
+    @mixin media($until: 'md') {
+      width: 22px;
+      height: 24px;
+      padding: 8px 16px;
+    }
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+
+    &-img {
+      width: 30px;
+      height: 32px;
+      margin-right: 5px;
+
+      @include media($until: 'md') {
+        width: 22px;
+        height: 24px;
+        margin-right: 4px;
+      }
+    }
+
+    &-text {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: -0.05em;
+    }
+  }
+
+  .fa-glasses {
+    font-size: 29px;
+  }
+}
