@@ -1,3 +1,7 @@
-body {
-    margin: 0;
-}
+@import '_variables.scss';
+@import '_fonts.scss';
+@import '_base.scss';
+
+@import '../fontawesome/scss/fontawesome.scss';
+@import '../fontawesome/scss/solid.scss';
+@import '../fontawesome/scss/brands.scss';
