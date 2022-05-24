@@ -129,9 +129,13 @@ header {
     .features-titles {
       margin-right: 128px;
       margin-top: 100px; } }
-  @media (max-width: 767px) {
-    .features-titles h2 {
-      text-align: center; } }
+  .features-titles h2 {
+    color: #9ba6b0; }
+    .features-titles h2.active {
+      color: #000; }
+    @media (max-width: 767px) {
+      .features-titles h2 {
+        text-align: center; } }
   @media (max-width: 767px) {
     .features-images {
       position: sticky;

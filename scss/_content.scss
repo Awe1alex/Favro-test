@@ -53,7 +53,13 @@
       margin-right: 128px;
       margin-top: 100px;
     }
+
     h2 {
+      color: $muted-text;
+
+      &.active {
+        color: $black;
+      }
       @include media($until: 'md') {
         text-align: center;
       }
